@@ -1,6 +1,7 @@
 import express from 'express';
 import mongoose from 'mongoose';
-
+import routes from './routes/index.js';
+import 'dotenv/config'
 
 const app = express()
 const PORT = process.env.PORT || 3000
@@ -13,10 +14,11 @@ mongoose.connect(process.env.DB_URL,{
       useUnifiedTopology: true,
     })
 .then(result => {
-    console.log('Connected...');
+    console.log('Connected with Database...');
 })
 .catch(err => {
     console.log(" database connection error");
+    console.log(err)
 })
 
 app.listen(PORT, () => {
