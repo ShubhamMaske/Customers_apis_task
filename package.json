@@ -1,0 +1,16 @@
+{
+  "name": "customer_apis_task",
+  "version": "1.0.0",
+  "description": "Creating a simple Node.js Rest API which provides data about customers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shubham Maske",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "joi": "^17.13.3",
+    "mongoose": "^8.5.2"
+  }
+}
